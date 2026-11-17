@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevTask - POO TypeScript</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <header>
+            <h1>DevTask <small>Vanilla JS Edition</small></h1>
+        </header>
+
+        <!-- Formulario para añadir nuevas tareas -->
+        <section class="form-section">
+
+            <form id="form-tareas">
+
+                <input
+                    type="text"
+                    id="input-titulo"
+                    placeholder="¿Qué tienes que programar hoy?..."
+                    required
+                >
+
+                <select id="select-prioridad">
+                    <option value="Alta">Alta</option>
+                    <option value="Media" selected>Media</option>
+                    <option value="Baja">Baja</option>
+                </select>
+
+                <button type="submit">Añadir Tarea</button>
+
+            </form>
+
+        </section>
+
+        <!-- Botones de filtrado -->
+        <section class="filter-section">
+
+            <button class="btn-filtro active" data-filtro="Todas">
+                Todas
+            </button>
+
+            <button class="btn-filtro" data-filtro="Pendientes">
+                Pendientes
+            </button>
+
+            <button class="btn-filtro" data-filtro="Completadas">
+                Completadas
+            </button>
+
+        </section>
+
+        <!-- Contenedor de tareas -->
+        <main class="tasks-section">
+
+            <div id="loading-state" class="loading">
+                Cargando tareas desde el servidor...
+            </div>
+
+            <ul id="lista-tareas">
+            </ul>
+
+        </main>
+
+    </div>
+
+    <!-- Cargar JavaScript generado por TypeScript -->
+    <script type="module" src="./dist/app.js"></script>
+
+</body>
+</html>

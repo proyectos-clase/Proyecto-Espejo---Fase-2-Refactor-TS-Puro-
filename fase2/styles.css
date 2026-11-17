@@ -1,0 +1,224 @@
+
+:root {
+    --bg-primary: #1e1e24;
+    --bg-secondary: #2a2a35;
+    --text-main: #f5f5f6;
+    --brand-color: #646cff;
+    --border-color: #3f3f50;
+
+    --high-priority: #ff4a4a;
+    --med-priority: #ffb703;
+    --low-priority: #4caf50;
+}
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.app-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* CABECERA */
+
+header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h1 small {
+    font-size: 0.9rem;
+    color: #888;
+    font-weight: normal;
+}
+
+/* FORMULARIO */
+
+.form-section {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    gap: 0.5rem;
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+input,
+select,
+button {
+    padding: 0.6rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-primary);
+    color: white;
+    font-family: inherit;
+}
+
+input {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid var(--brand-color);
+    outline-offset: 2px;
+}
+
+/* BOTÓN AÑADIR */
+
+button {
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button[type="submit"] {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+}
+
+button[type="submit"]:hover {
+    background-color: #535bf2;
+}
+
+/* FILTROS */
+
+.filter-section {
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-filtro {
+    cursor: pointer;
+    background: transparent;
+}
+
+.btn-filtro:hover {
+    border-color: var(--brand-color);
+}
+
+.btn-filtro.active {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+}
+
+/* LISTA DE TAREAS */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-tarea {
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    border-left: 5px solid var(--border-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    transition: transform 0.2s;
+}
+
+.item-tarea:hover {
+    transform: translateX(3px);
+}
+
+/* PRIORIDADES */
+
+.item-tarea.Alta {
+    border-left-color: var(--high-priority);
+}
+
+.item-tarea.Media {
+    border-left-color: var(--med-priority);
+}
+
+.item-tarea.Baja {
+    border-left-color: var(--low-priority);
+}
+
+/* TAREAS COMPLETADAS */
+
+.completada {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* BOTÓN DE ESTADO */
+
+.item-tarea button {
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.item-tarea button:hover {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+}
+
+/* CARGANDO */
+
+.loading {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    padding: 1rem;
+}
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 1rem;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input,
+    select,
+    button[type="submit"] {
+        width: 100%;
+    }
+
+    .filter-section {
+        flex-wrap: wrap;
+    }
+
+    .btn-filtro {
+        flex: 1;
+    }
+
+    .item-tarea {
+        align-items: flex-start;
+    }
+}
