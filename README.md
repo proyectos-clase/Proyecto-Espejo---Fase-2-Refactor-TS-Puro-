@@ -1,5 +1,7 @@
 Autor: Jorge Jiménez González
+
 Proyecto: Proyecto Espejo
+
 Fase: 2 – Refactorización con TypeScript
 
 📋 Descripción:
