@@ -30,25 +30,20 @@ POO: organización mediante clases y encapsulación.
 
 📁 Estructura del proyecto:
 
-text
+```
 fase2/
-│
 ├── dist/
-│   └── Archivos JavaScript generados
-│
 ├── src/
 │   ├── interfaces/
 │   │   └── tareaInterface.ts
-│   │
 │   ├── modelo/
 │   │   └── taskManager.ts
-│   │
 │   └── app.ts
-│
 ├── index.html
 ├── styles.css
 ├── tsconfig.json
 └── README.md
+```
 
 Descripción de los archivos:
 
