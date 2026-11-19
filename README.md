@@ -24,8 +24,8 @@ Compilar TypeScript a JavaScript.
 
 TypeScript: desarrollo de la lógica y tipado del proyecto.
 JavaScript: código generado tras la compilación.
-HTML5: estructura de la aplicación.
-CSS3: diseño y presentación visual.
+HTML: estructura de la aplicación.
+CSS: diseño y presentación visual.
 POO: organización mediante clases y encapsulación.
 
 📁 Estructura del proyecto:
