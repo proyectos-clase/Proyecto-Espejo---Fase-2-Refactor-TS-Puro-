@@ -61,12 +61,16 @@ tsconfig.json	Configuración del compilador de TypeScript.
 
 dist/	Directorio destinado a los archivos JavaScript generados durante la compilación.
 
-⚙️ Organización y funcionamiento
+⚙️ Organización y funcionamiento:
 
 El proyecto está organizado siguiendo una separación de responsabilidades:
 
 Interfaces: definen la estructura de los datos y permiten aplicar tipado estricto.
+
 Modelo: contiene la clase TaskManager, que centraliza la gestión de las tareas mediante POO.
+
 Aplicación: app.ts actúa como punto de entrada de la lógica de la aplicación.
+
 Interfaz visual: HTML y CSS se encargan de la estructura y presentación.
+
 Compilación: TypeScript transforma los archivos .ts en JavaScript para su ejecución.
