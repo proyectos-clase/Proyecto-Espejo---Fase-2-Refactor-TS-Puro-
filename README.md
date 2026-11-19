@@ -15,11 +15,17 @@ La gestión de las tareas se centraliza en la clase TaskManager, mientras que la
 🎯 Objetivos:
 
 Refactorizar la aplicación de tareas utilizando TypeScript.
+
 Aplicar tipado estricto para mejorar la seguridad del código.
+
 Implementar Programación Orientada a Objetos.
+
 Utilizar clases, interfaces y encapsulación.
+
 Separar el modelo de datos de la lógica de la aplicación.
+
 Mantener una estructura organizada y modular.
+
 Compilar TypeScript a JavaScript.
 
 🛠️ Tecnologías utilizadas:
