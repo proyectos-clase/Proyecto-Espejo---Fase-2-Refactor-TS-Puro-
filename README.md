@@ -48,11 +48,17 @@ fase2/
 Descripción de los archivos:
 
 src/interfaces/tareaInterface.ts	Define la interfaz que establece la estructura y los tipos de datos de las tareas.
+
 src/modelo/taskManager.ts	Contiene la clase encargada de gestionar las tareas y centralizar su lógica.
+
 src/app.ts	Archivo principal que conecta la lógica de la aplicación con su funcionamiento.
+
 index.html	Estructura HTML de la aplicación.
+
 styles.css	Estilos visuales de la interfaz.
+
 tsconfig.json	Configuración del compilador de TypeScript.
+
 dist/	Directorio destinado a los archivos JavaScript generados durante la compilación.
 
 ⚙️ Organización y funcionamiento
